@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar-right" id="sidebar">
+    <button class="btn btn-primary btn-lg btn-circle" onclick="sidebarClose()"> <i class="fa fa-times"></i> </button>
+    <a href="#" class="active">HOME</a>
+    <a href="#">SHOP</a>
+    <a href="#">ABOUT</a>
+    <a href="#">CONTACT</a>
+</div>
+
+<div class="bg">
+
+    <nav class="navbar justify-content-between">
+        <div class="logo">
+            <a href="#">
+                <img src="assets/logo.png" alt="" srcset="" height="50px">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="#" class="active">HOME</a>
+            <a href="#">SHOP</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+            <button class="btn btn-primary btn-lg icon" onclick="sidebarOpen()"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container-fluid">
+
+        <div class="d-sm-flex justify-content-around content">
+
+            <div class="content-left">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="text-blue"><b>ONLINE SHOPPING</b></h1>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</p>
+                </div>
+                <br>
+                <a href="#" class="btn btn-primary btn-sm">Started now</a>
+                <a href="#" class="btn btn-secondary btn-sm">Learn more</a>
+            </div>
+
+            <div class="image">
+                <img src="assets/image.png" alt="" srcset="" height="450px">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script>
+    function sidebarOpen(){
+        document.getElementById("sidebar").style.transform = "translateX(0px)";
+    }
+    function sidebarClose(){
+        document.getElementById("sidebar").style.transform = "translateX(300px)";
+    }
+</script>
+</html>
